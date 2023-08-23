@@ -14,3 +14,4 @@ osmosis --read-pbf-fast file=switzerland-latest.osm.pbf --bounding-box top=46.03
 osmosis --read-pbf-fast file=switzerland-latest.osm.pbf --tf accept-ways highway=motorway,motorway_link,trunk,trunk_link,primary,primary_link --used-node --write-pbf bigroads-example.osm.pbf
 osmosis --rb file=bigroads-example.osm.pbf --read-pbf-fast allroads-example.osm.pbf --merge --write-xml merged-example-network.osm 
 ```
+An example script of how to convert the resulting merged-example-network.osm file into a MATSim network file is RunPNetworkGenerator.java in matsim-code-examples.
